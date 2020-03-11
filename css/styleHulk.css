@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(130deg,rgb(5, 216, 5),rgb(147, 223, 185));
+    min-height: 100px; /*alt mini*/
+    width: 100%;
+    margin:0;
+}
+.contenido{
+    width: 100%;
+    min-width: 100px;
+    margin: 0;
+}
+p{
+    text-align: center;
+    font-family: 'Lacquer';
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+h1{
+    color: rgb(13, 14, 13);
+    text-shadow: 0px 0px 20px rgb(192, 14, 14);
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Permanent Marker';
+    margin:0;
+}
+.contenido img{
+    float: left;
+    max-width: 600px;
+    margin: 10px;
+}
+a{
+    color:rgb(238, 3, 140);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+}
+a:hover {
+    color:rgb(143, 7, 120);
+    background-color:transparent;
+}
+
