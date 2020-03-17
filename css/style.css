@@ -34,4 +34,42 @@ nav li a {
     color: #FFF;
     text-decoration: none;
 }
-
+figure img{
+    width: 100%;
+    display: block;
+}
+figcaption{
+    background-color: #232323;
+}
+figure h2{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 2rem;
+    line-height: 100%;
+}
+section{
+    box-sizing: border-box;
+    display: block;
+}
+article{
+    box-sizing: border-box;
+    padding: 2rem;
+    overflow: hidden;
+    width: 100%;
+}
+.imagenes{
+    width: 40%;
+    float:left;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+h3 {
+    text-align: left;
+    font-weight: 600;
+    padding-left: 3rem;
+}
+article figure{
+    width: 40%;
+}
