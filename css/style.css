@@ -5,6 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 1.5rem;
+    overflow-x: hidden;
 }
 header{
     background-color: #232323;
@@ -34,12 +35,29 @@ nav li a {
     color: #FFF;
     text-decoration: none;
 }
+#noticiasdestacadas{
+    width: 300vw;
+    overflow: auto;
+    animation: 15s slider infinite;
+}
+figure{
+    float: left;
+    width: 100vw;
+}
 figure img{
     width: 100%;
     display: block;
 }
 figcaption{
     background-color: #232323;
+}
+@keyframes slider{
+    0%{margin-left: 0;}
+    20% {margin-left: 0;}
+    40%{margin-left: -100vw;}
+    60%{margin-left: -100vw;}
+    80%{margin-left: -200vw;}
+    100% {margin-left: -200vw;}
 }
 figure h2{
     color: #FFF;
@@ -57,6 +75,7 @@ article{
     padding: 2rem;
     overflow: hidden;
     width: 100%;
+    /* outline: solid 1px rgba(88, 85, 85, 0.856); */
 }
 .imagenes{
     width: 40%;
