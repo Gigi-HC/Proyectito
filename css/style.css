@@ -110,35 +110,50 @@ article p {
 table{
     width: 60%;
     box-sizing: border-box;
-    display: block;
+    display: table;
     float: left;
     line-height: 3rem;
     background-color: rgba(170, 170, 235, 0.863);
     margin-left: 30rem;
     margin-bottom: 10rem;
 }
-table th{
+caption{
+    display: table-caption;
     background-color: red;
-    width: 100vw;
+    width: 100%;
     color: #FFF;
     font-weight: bold;
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 3rem;
     line-height: 100%;
+}
+table tr{
+    display:table-row;
 }
 table td {
-    text-align: justify;
+    display:table-cell;
+	text-align: center;
+    vertical-align: middle;
+    color: rgb(10, 10, 10);
+    font-size: 3rem;
+    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
 }
-table p{
+table td p{
     color: black;
-    font-weight: bold;
-    font-size: 2rem;
-    padding: 0.5rem;
-    line-height: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 1rem;
 }
 table a{
     font-weight: 600;
     text-decoration: none;
+    font-size: 1.5rem;
 }
+table th{
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
 
-/*    border-bottom: red 0.5rem solid; */
+}
