@@ -46,7 +46,7 @@ figure{
     float: left;
     width: 100vw;
 }
-figure img{
+img{
     width: 100%;
     display: block;
 }
@@ -68,11 +68,19 @@ figure h2{
     padding: 2rem;
     line-height: 100%;
 }
-#ultimasnoticias{
-    width: 100%;
- 
+.noticias{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: ;
 }
-article{
+.noticias-img{
+    width:25%
+}
+.noticias-textos{
+    width: 65%;
+}
+/*article{
     float: left;
     width: 100vw;
     padding: 1rem;
@@ -102,7 +110,7 @@ article p {
     margin: 4rem;
     line-height: 3rem;
     font-size: 2rem; 
-}
+} */
 #tabla{
     width: 100%;
     box-sizing: border-box;  
