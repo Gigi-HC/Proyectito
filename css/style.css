@@ -11,7 +11,6 @@ header{
     background-color: #232323;
     padding: 2rem;
     overflow: hidden;
-    width: 100vw;
 }
 h1{
     font-size: 2.5rem;
@@ -25,9 +24,7 @@ h1{
 }
 nav{
     float: right;
-    overflow: hidden;
     margin-top: 0.5rem;
-    margin-right: 4rem;
 }
 nav li{
     display: inline;
@@ -53,6 +50,82 @@ img{
 figcaption{
     background-color: #232323;
 }
+figure h2{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2rem;
+    line-height: 100%;
+}
+.noticia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* flext-start | flex-end | center | space-between | space-around | */
+    align-items: center; /* flex-start | flex-end | center | stretch */
+    min-height: 30rem;
+    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
+}
+.noticia-img {
+    width: 30%;
+}
+.noticia-txt {
+    width: 65%;
+}
+.noticia-txt h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 125%;
+}
+.noticia-txt p:nth-of-type(1) {
+    line-height: 200%;
+}
+.noticia-txt p:nth-of-type(1) a {
+    text-decoration: none;
+    color: #000;
+}
+#tabla-resultados table {
+    margin: auto;
+}
+#tabla-resultados table th {
+    background-color: red;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem;
+}
+#tabla-resultados table td {
+    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
+    background-color: rgba(170, 170, 235, 0.274);
+    text-align: left;
+    vertical-align: middle;
+    color: rgb(10, 10, 10);
+    font-size: 2rem;
+    padding: 1rem;
+    line-height: 2.5rem;
+}
+#tabla-resultados td:nth-of-type(2n+1) {
+    color: black;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+#tabla-resultados table td a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(12, 88, 158);
+}
+footer{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
 @keyframes slider{
     0%{margin-left: 0;}
     20% {margin-left: 0;}
@@ -60,108 +133,4 @@ figcaption{
     60%{margin-left: -100vw;}
     80%{margin-left: -200vw;}
     100% {margin-left: -200vw;}
-}
-figure h2{
-    color: #FFF;
-    font-weight: bold;
-    font-size: 3rem;
-    padding: 2rem;
-    line-height: 100%;
-}
-.noticias{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: ;
-}
-.noticias-img{
-    width:25%
-}
-.noticias-textos{
-    width: 65%;
-}
-/*article{
-    float: left;
-    width: 100vw;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-article img{
-    width: 40%;
-    float:left;
-    display: block;
-    margin: 1rem;
-    overflow: auto;
-}
-article h3 {
-    text-align: left;
-    font-weight: 600;
-    margin: 2rem;
-    font-size: 3.5rem;
-    line-height: 100%;
-}
-article h4 {
-    text-align: left;
-    margin: 2rem;
-    font-size: 1.5rem; 
-}
-article p {
-    text-align: left;
-    margin: 4rem;
-    line-height: 3rem;
-    font-size: 2rem; 
-} */
-#tabla{
-    width: 100%;
-    box-sizing: border-box;  
-}
-table{
-    width: 60%;
-    box-sizing: border-box;
-    display: table;
-    float: left;
-    line-height: 3rem;
-    background-color: rgba(170, 170, 235, 0.863);
-    margin-left: 30rem;
-    margin-bottom: 10rem;
-}
-caption{
-    display: table-caption;
-    background-color: red;
-    width: 100%;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 100%;
-}
-table tr{
-    display:table-row;
-}
-table td {
-    display:table-cell;
-	text-align: center;
-    vertical-align: middle;
-    color: rgb(10, 10, 10);
-    font-size: 3rem;
-    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
-}
-table td p{
-    color: black;
-    text-align: left;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
-table a{
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-table th{
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 100%;
-    text-align: center;
-    vertical-align: middle;
-    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
-
 }
