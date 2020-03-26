@@ -58,12 +58,16 @@ figure h2{
     line-height: 100%;
 }
 .noticia {
+    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; /* flext-start | flex-end | center | space-between | space-around | */
     align-items: center; /* flex-start | flex-end | center | stretch */
     min-height: 30rem;
     border-bottom: 1px solid rgba(109, 107, 107, 0.226);
+}
+.noticia:last-child {
+	border: none;
 }
 .noticia-img {
     width: 30%;
@@ -100,7 +104,6 @@ table{
     padding: 5rem;
 }
 #tabla-resultados table td {
-    border-bottom: 1px solid rgba(109, 107, 107, 0.226);
     background-color: rgba(170, 170, 235, 0.274);
     text-align: left;
     vertical-align: middle;
@@ -119,12 +122,21 @@ table{
     font-weight: 600;
     color: rgb(12, 88, 158);
 }
+#tabla-resultados tr {
+	border-bottom: solid 1px #999999;
+}
+#tabla-resultados tr:first-child,
+#tabla-resultados tr:last-child {
+	border: none;
+}
 footer{
     background-color: black;
     color: white;
     font-weight: 600;
     font-size: 2rem;
     text-align: center;
+    padding: 15px;
+	margin-top: 30px;
 }
 @keyframes slider{
     0%{margin-left: 0;}
