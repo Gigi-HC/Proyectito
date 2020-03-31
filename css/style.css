@@ -12,7 +12,10 @@ header{
     padding: 2rem;
     overflow: hidden;
 }
-h1{
+button {
+	display: none;
+}
+header h1{
     font-size: 2.5rem;
     font-weight: 600;
     color: #FFF;
@@ -34,18 +37,33 @@ nav li a {
     color: #FFF;
     text-decoration: none;
 }
+img{
+    width: 100%;
+    display: block;
+}
 #noticiasdestacadas{
     width: 300vw;
-    overflow: auto;
+    overflow: hidden;
+    position: relative;
     animation: 15s slider infinite;
+}
+#noticias-destacadas figure {
+    float: left;
+    position: relative;
+    width: 100vw;
+}
+#noticias-destacadas figcaption { /* <-- busca al elemento con id="noticias-destacadas" */
+      background-color: #333333;
+      padding: 15px;
+}
+#noticias-destacadas h2 {
+      color: #FFFFFF;
+      font-size: 32px;
+      font-weight: 700;
 }
 figure{
     float: left;
     width: 100vw;
-}
-img{
-    width: 100%;
-    display: block;
 }
 figcaption{
     background-color: #232323;
@@ -61,7 +79,7 @@ figure h2{
     border-bottom: 1px solid rgba(109, 107, 107, 0.226);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; /* flext-start | flex-end | center | space-between | space-around | */
+    justify-content: space-around;    /* flext-start | flex-end | center | space-between | space-around | */
     align-items: center; /* flex-start | flex-end | center | stretch */
     min-height: 30rem;
     border-bottom: 1px solid rgba(109, 107, 107, 0.226);
@@ -75,10 +93,23 @@ figure h2{
 .noticia-txt {
     width: 65%;
 }
+.noticia-txt a {
+	text-decoration: none;
+	color: #000;
+}
+.noticia-txt p {
+	font-size: 16px;
+}
 .noticia-txt h3 {
     font-weight: bold;
     font-size: 2rem;
     line-height: 125%;
+}
+.noticia-txt h3,
+.noticia-txt p {
+	line-height: 1.5;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .noticia-txt p:nth-of-type(1) {
     line-height: 200%;
@@ -88,7 +119,8 @@ figure h2{
     color: #000;
 }
 #tabla-resultados table {
-    margin: auto;
+    display: table;
+    width: 70%;
 }
 #tabla-resultados table th {
     background-color: red;
@@ -96,12 +128,6 @@ figure h2{
     font-weight: bold;
     font-size: 1.6rem;
     padding: 1rem;
-}
-table{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 5rem;
 }
 #tabla-resultados table td {
     background-color: rgba(170, 170, 235, 0.274);
@@ -145,4 +171,51 @@ footer{
     60%{margin-left: -100vw;}
     80%{margin-left: -200vw;}
     100% {margin-left: -200vw;}
+}
+/* print es para imprimir la web // screen es tel y web //tty mini pantallas de dispositivos(posnet) */
+/*@media screen and (min-width: 320px) and (max-width: 320px){}*/
+@media screen and (max-width: 600px){
+	/* Inicio @media-query */
+	.noticia {
+        flex-direction: column;
+        padding: 2rem;
+	}
+	.noticia-img, .noticia-txt {
+        width: 100%;
+    }
+    nav {
+		display: none;
+		float: none;
+		clear: left;
+		padding-top: 1rem;
+	}
+	nav ul li {
+		display: block;
+		text-align: center;
+		line-height: 1.5;
+	}
+	button {
+		display: block;
+		float: right;
+		color: #FFF;
+		font-size: 1.25rem;
+		line-height: 1;
+		background-color: transparent;
+		border: none;
+		padding: 0.25rem;
+	}
+	button:focus + nav {
+		display: block;
+    }
+
+    /*table{
+        width: 98%;
+        padding: 0;
+    }
+    #tabla-resultados table td {
+        font-size: 1.5rem;
+        padding: 0.5;
+        line-height: 2rem;
+    }*/
+	/* Fin de @media-query */
 }
